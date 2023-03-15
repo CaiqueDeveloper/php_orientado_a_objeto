@@ -22,7 +22,7 @@ class Product{
 		return $this->quantity;
 	}
 	public function getPrice(){
-		return 'R$ '.number_format($this->price, '2', ',', '.');
+		return (float)$this->price;
 	}
 	public function setSupplier(Supplier $supplier){
 		$this->supplier = $supplier;
